@@ -16,6 +16,8 @@ public final class NoPluginsCommand extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onCommandUse(PlayerCommandPreprocessEvent event) {
+        if (event.getPlayer().hasPermission("nopluginscommand.bypass"))
+            return;
         String text = event.getMessage().toLowerCase();
         String command = text.split(" ")[0];
         boolean denied = Stream.of("?",

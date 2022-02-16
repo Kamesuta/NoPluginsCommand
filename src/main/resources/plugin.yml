@@ -4,6 +4,6 @@ main: net.numalab.nopluginscommand.NoPluginsCommand
 authors: [ Kamesuta ]
 
 permissions:
-  nopluginscommand:
+  nopluginscommand.bypass:
     description: "Allows the user to execute the /help, /?, /plugins, etc... command."
     default: op

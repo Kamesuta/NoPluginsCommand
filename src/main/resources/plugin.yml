@@ -1,0 +1,9 @@
+name: NoPluginsCommand
+version: '${project.version}'
+main: net.numalab.nopluginscommand.NoPluginsCommand
+authors: [ Kamesuta ]
+
+permissions:
+  nopluginscommand:
+    description: "Allows the user to execute the /help, /?, /plugins, etc... command."
+    default: op
